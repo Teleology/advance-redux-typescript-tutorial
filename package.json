@@ -1,0 +1,59 @@
+{
+  "name": "advance-redux-typescript-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Teleology/advance-redux-typescript-tutorial.git"
+  },
+  "author": "Technology",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Teleology/advance-redux-typescript-tutorial/issues"
+  },
+  "homepage": "https://github.com/Teleology/advance-redux-typescript-tutorial#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@svgr/webpack": "^5.4.0",
+    "@types/lodash": "^4.14.165",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-redux": "^7.1.2",
+    "@typescript-eslint/eslint-plugin": "^4.0.1",
+    "@typescript-eslint/parser": "^4.0.1",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "eslint": "^7.3.0",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "image-webpack-loader": "^6.0.0",
+    "node-sass": "^4.12.0",
+    "prettier": "^2.0.5",
+    "react-dom": "^16.9.0",
+    "react-hot-loader": "^4.12.11",
+    "redux-devtools-extension": "^2.13.8",
+    "rimraf": "^3.0.2",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.0.0",
+    "ts-loader": "^7.0.5",
+    "typescript": "^4.0.2",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-middleware": "^3.7.0",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.1"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["import", "react", "react-hooks","@typescript-eslint"],
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:import/typescript",
+    "plugin:import/errors",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint",
+    "../.eslintrc-base.json"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "arrow-body-style": ["error", "as-needed"],
+    "camelcase": "off",
+    "consistent-return": "error",
+    "constructor-super": "error",
+    "curly": "error",
+    "default-case": "warn",
+    "dot-notation": "error",
+    "eqeqeq": ["error", "always", {"null": "ignore"}],
+    "import/order": "error",
+    "import/no-unresolved": "error",
+    "import/named": "off",
+    "no-await-in-loop": "error",
+    "no-cond-assign": "error",
+    "no-console": ["warn", { "allow": ["error"] }],
+    "no-const-assign": "error",
+    "no-delete-var": "error",
+    "no-dupe-args": "error",
+    "no-duplicate-imports": "error",
+    "no-fallthrough": "error",
+    "no-implicit-globals": "error",
+    "no-new-symbol": "error",
+    "no-regex-spaces": "error",
+    "no-return-await": "error",
+    "no-self-assign": "error",
+    "no-this-before-super": "error",
+    "no-undef-init": "error",
+    "no-unsafe-negation": "error",
+    "no-useless-concat": "error",
+    "no-useless-return": "error",
+    "no-var": "error",
+    "object-shorthand": "error",
+    "prefer-const": "error",
+    "require-await": "error",
+    "yoda": "error",
+    "@typescript-eslint/array-type": ["error", {"default": "generic"}],
+    "@typescript-eslint/explicit-function-return-type": ["error"],
+    "@typescript-eslint/member-ordering": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-unused-vars": ["error", {"ignoreRestSiblings": true }],
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": "error",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "default",
+        "format": ["camelCase"],
+        "custom": {
+          "regex": "\b(error|type|(f|F)unction|(o|O)bject|(u|U)ndefined|(B|b)oolean|any|(S|s)tring|(N|n)umber)\b",
+          "match": false
+        }
+      },
+      {
+        "selector": "typeLike",
+        "format": ["PascalCase"]
+      },
+      {
+        "selector": "enumMember",
+        "format": ["UPPER_CASE"]
+      },
+      {
+        "selector": "parameter",
+        "format": ["camelCase", "PascalCase"]
+      },
+      {
+        "selector": "variable",
+        "modifiers": ["const"],
+        "format": ["camelCase", "PascalCase"]
+      },
+      {
+        "selector": "variable",
+        "modifiers": ["const"],
+        "types": ["string"],
+        "format": ["camelCase","UPPER_CASE"]
+      },
+
+      {
+        "selector": "variable",
+        "format": ["camelCase"]
+      },
+      {
+        "selector": "interface",
+        "format": ["PascalCase"],
+        "prefix": ["I"]
+      }
+    ],
+    "@typescript-eslint/strict-boolean-expressions": [
+      "error",
+      {
+        "allowString": false,
+        "allowNumber": false
+      }
+    ],
+    "@typescript-eslint/typedef": [
+      "error",
+      {
+        "variableDeclarationIgnoreFunction": true
+      }
+    ],
+    "react/jsx-boolean-value": ["error", "always"],
+    "react/jsx-key": "error",
+    "react/no-children-prop": "error",
+    "react/no-direct-mutation-state": "error",
+    "react/jsx-no-bind": "error",
+    "react/no-find-dom-node": "error",
+    "react/no-string-refs": "error",
+    "react/self-closing-comp": "error",
+    "react/no-unescaped-entities": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "react/prop-types": "off"
+  }
+}
